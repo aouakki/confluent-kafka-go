@@ -36,14 +36,6 @@ import (
 #else
 #define MIN_VER_ERRSTR "confluent-kafka-go requires librdkafka v1.3.0 or later. Install the latest version of librdkafka from the Confluent repositories, see http://docs.confluent.io/current/installation.html"
 #endif
-
-#if RD_KAFKA_VERSION < MIN_RD_KAFKA_VERSION
-#ifdef __APPLE__
-#error "confluent-kafka-go requires librdkafka v1.3.0 or later. Install the latest version of librdkafka from Homebrew by running `brew install librdkafka` or `brew upgrade librdkafka`"
-#else
-#error "confluent-kafka-go requires librdkafka v1.3.0 or later. Install the latest version of librdkafka from the Confluent repositories, see http://docs.confluent.io/current/installation.html"
-#endif
-#endif
 */
 import "C"
 
