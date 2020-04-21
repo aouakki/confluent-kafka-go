@@ -23,8 +23,7 @@ import (
 /*
 #include <librdkafka/rdkafka.h>
 
-//Minimum required librdkafka version. This is checked both during
-//build-time and runtime.
+//Minimum required librdkafka version. This is checked during runtime.
 //Make sure to keep the MIN_RD_KAFKA_VERSION, MIN_VER_ERRSTR and #error
 //defines and strings in sync.
 //
@@ -35,14 +34,6 @@ import (
 #define MIN_VER_ERRSTR "confluent-kafka-go requires librdkafka v1.4.0 or later. Install the latest version of librdkafka from Homebrew by running `brew install librdkafka` or `brew upgrade librdkafka`"
 #else
 #define MIN_VER_ERRSTR "confluent-kafka-go requires librdkafka v1.4.0 or later. Install the latest version of librdkafka from the Confluent repositories, see http://docs.confluent.io/current/installation.html"
-#endif
-
-#if RD_KAFKA_VERSION < MIN_RD_KAFKA_VERSION
-#ifdef __APPLE__
-#error "confluent-kafka-go requires librdkafka v1.4.0 or later. Install the latest version of librdkafka from Homebrew by running `brew install librdkafka` or `brew upgrade librdkafka`"
-#else
-#error "confluent-kafka-go requires librdkafka v1.4.0 or later. Install the latest version of librdkafka from the Confluent repositories, see http://docs.confluent.io/current/installation.html"
-#endif
 #endif
 */
 import "C"
